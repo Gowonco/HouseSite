@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+    <configuration>
+        <settings>
+            <!-- 关闭缓存 -->
+            <setting name="cacheEnabled" value="false"/>
+            <!-- 将表带下划线字段转换成驼峰格式 -->
+            <setting name="mapUnderscoreToCamelCase" value="true"/>
+            <!-- 允许 JDBC 支持自动生成主键 -->
+            <setting name="useGeneratedKeys" value="true"/>
+            <!-- 执行器会重用预处理语句 -->
+            <setting name="defaultExecutorType" value="REUSE"/>
+            <!-- 事务超时时间 -->
+            <setting name="defaultStatementTimeout" value="600"/>
+
+        </settings>
+
+        <typeAliases>
+            <typeAlias type="com.gowonco.house.common.model.User" alias="user"/>
+        </typeAliases>
+
+        <mappers>
+            <mapper resource="mapper/user.xml"/>
+        </mappers>
+
+    </configuration>
