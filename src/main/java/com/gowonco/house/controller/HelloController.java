@@ -39,7 +39,7 @@ public class HelloController {
 
     @RequestMapping("index")
     public ModelAndView index(){
-        ModelAndView mv = new ModelAndView("index");
+        ModelAndView mv = new ModelAndView("homepage/index");
         return mv;
     }
 }
