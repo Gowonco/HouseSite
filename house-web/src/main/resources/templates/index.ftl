@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <!-- end Slider -->
+    <!-- end Slider -->1
 
     <!-- Search Box -->
     <div class="search-box-wrapper">

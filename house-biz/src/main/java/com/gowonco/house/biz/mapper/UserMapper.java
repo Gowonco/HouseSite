@@ -17,5 +17,13 @@ import java.util.List;
 public interface UserMapper {
 
     List<User> selectUsers();
+
+    Integer insert(User account);
+
+    Integer delete(String email);
+
+    Integer update(User updateUser);
+
+    List<User> selectUsersByQuery(User user);
 }
 

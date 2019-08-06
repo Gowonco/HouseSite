@@ -33,6 +33,7 @@ public class HelloController {
 
         List<User> list = userService.getUsers();
         User one =list.get(0);
+
         if(one != null) {
             throw new IllegalArgumentException();
         }

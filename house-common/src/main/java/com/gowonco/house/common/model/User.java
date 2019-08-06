@@ -1,15 +1,43 @@
 package com.gowonco.house.common.model;
 
+import org.springframework.web.multipart.MultipartFile;
+
+import java.util.Date;
+
 /**
  * 用户类
+ *
  * @author gowonco
  * @date 2019-07-15 23:14
  */
 public class User {
     private Long id;
     private String name;
-    private  String email;
-    private  String phone;
+    private String email;
+    private String phone;
+    private String passwd;
+    private String confirmPasswd;
+    private String type;// 1普通用户2经纪人
+    private Date createTime;
+    private Integer enable;
+    private String avatar;
+    private MultipartFile avatarFile;
+    private String newPassword;
+    private String key;
+
+    public String getAboutme() {
+        return aboutme;
+    }
+
+    public void setAboutme(String aboutme) {
+        this.aboutme = aboutme;
+    }
+
+    private String aboutme;
+
+    public User() {
+    }
+
 
     public Long getId() {
         return id;
@@ -41,5 +69,77 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getPasswd() {
+        return passwd;
+    }
+
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
+    }
+
+    public String getConfirmPasswd() {
+        return confirmPasswd;
+    }
+
+    public void setConfirmPasswd(String confirmPasswd) {
+        this.confirmPasswd = confirmPasswd;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Integer getEnable() {
+        return enable;
+    }
+
+    public void setEnable(Integer enable) {
+        this.enable = enable;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public MultipartFile getAvatarFile() {
+        return avatarFile;
+    }
+
+    public void setAvatarFile(MultipartFile avatarFile) {
+        this.avatarFile = avatarFile;
+    }
+
+    public String getNewPassword() {
+        return newPassword;
+    }
+
+    public void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }
